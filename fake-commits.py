@@ -6,15 +6,15 @@ from faker import Faker
 # Initialize Faker for generating random commit messages
 fake = Faker()
 
-# Define fake developer emails
+# Define some fake developer emails
 developers = [
-    {"name": "Antoinette Dev", "email": "antoinette@example.com"},
     {"name": "Sam Dev", "email": "sam@example.com"},
-    {"name": "Jeff Dev", "email": "Jeff@example.com"},
+    {"name": "Antoinette Dev", "email": "antoinette@example.com"},
+    {"name": "Jeff Dev", "email": "jeff@example.com"},
 ]
 
-# Path to local repository
-repo_path = "/Users/trevgeis/dev/code-review-test"
+# Path to your local Git repository
+repo_path = os.path.dirname(os.path.abspath(__file__))
 
 def make_commit():
     """Simulates a commit from a randomly chosen fake developer."""
